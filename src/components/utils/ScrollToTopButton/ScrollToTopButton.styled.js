@@ -1,16 +1,18 @@
 import styled from 'styled-components';
 
 export const ButtonStyled = styled.button`
-  width: 196px;
+  position: fixed;
+  bottom: 25vh;
+  right: 10vw;
+  z-index: 1000;
+  width: 50px;
   height: 50px;
-  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
   border: none;
-  border-radius: 11px;
-  text-transform: uppercase;
   background-color: ${p => p.theme.colors.btnFollow};
-  color: ${p => p.theme.colors.btnText};
-  font-weight: ${p => p.theme.fontWeights[2]};
-  line-height: ${p => p.theme.lineHeights.btnText};
   &:hover {
     background-color: ${p => p.theme.colors.btnFollowing};
   }

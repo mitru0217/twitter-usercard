@@ -1,10 +1,12 @@
 import React from 'react';
 
-const Button = ({ text, onClick, style, disabled }) => {
+import { ButtonStyled } from './Button.styled';
+
+const Button = ({ text, onClick, style }) => {
   return (
-    <button onClick={onClick} style={style} disabled={disabled}>
+    <ButtonStyled onClick={onClick} style={style}>
       {text}
-    </button>
+    </ButtonStyled>
   );
 };
 

@@ -1,11 +1,13 @@
 import React from 'react';
 
-const Dropdown = () => {
+import { Select } from './Dropdown.styled';
+
+const Dropdown = ({ value, onChange }) => {
   return (
-    <Select>
-      <Option value="1">Option 1</Option>
-      <Option value="2">Option 2</Option>
-      <Option value="3">Option 3</Option>
+    <Select value={value} onChange={onChange}>
+      <option value="all">all</option>
+      <option value="!isFollowing">follow</option>
+      <option value="isFollowing">following</option>
     </Select>
   );
 };
